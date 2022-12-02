@@ -304,6 +304,10 @@ html{
 }
 
 @media screen and (max-width: 900px){
+    .navbar{
+        height: 80px;
+        font-size: 30px;
+    }
     .desc-abt{
         max-width: 78%;
     }
@@ -314,14 +318,14 @@ html{
         max-width: 78%;
     }
     .pjct-title{
-        font-size: 40px;
+        font-size: 30px;
     }
     .pjct-desc{
-        font-size: 30px;
+        font-size: 25px;
     }
     .orientadores{
         padding-left: 1%;
-        font-size: 25px;
+        font-size: 20px;
     }
 }
 
@@ -336,13 +340,39 @@ html{
         max-width: 91%;
     }
     .pjct-desc{
-        font-size: 30px;
+        font-size: 25px;
     }
     .orientadores{
         padding-left: 1%;
-        font-size: 25px;
+        font-size: 20px;
     }
     .pjct-title{
-        font-size: 40px;
+        font-size: 30px;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .navbar{
+        height: 60px;
+        font-size: 20px;
+    }
+    .desc-abt{
+        max-width: 59%;
+    }
+    .pjcts-item{
+        max-width: 50%;
+    }
+    .pjcts-item{
+        max-width: 50%;
+    }
+    .pjct-title{
+        font-size: 16px;
+    }
+    .pjct-desc{
+        font-size: 16px;
+    }
+    .orientadores{
+        padding-left: 1%;
+        font-size: 12px;
     }
 }
