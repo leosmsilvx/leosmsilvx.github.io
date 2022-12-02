@@ -17,11 +17,11 @@ html{
     position: sticky;
     display: flex;
     width: 100%;
-    height: 60px;
+    height: 80px;
+    font-size: 40px;
     align-items: center;
     justify-content: center;
     background-color: #0f0f0f;
-    font-size: 20px;
 }
 
 .nav-item{
@@ -121,6 +121,7 @@ html{
 
 .instagram{
     padding: 10%;
+    font-size: 30px;
     border-radius: 100px;
     text-align: center;
     background-color: #ff0065;
@@ -129,14 +130,13 @@ html{
 }
 
 .instagram:hover{
-    padding: 10%;
-    border-radius: 100px;
     background-color: #5c00b3;
     box-shadow: 0px 0px 7px 1px #5c00b3;
 }
 
 .github{    
     padding: 10%;
+    font-size: 30px;
     border-radius: 100px;
     background-color: #3c434d;
     color: white;
@@ -144,14 +144,13 @@ html{
 }
 
 .github:hover{
-    padding: 10%;
-    border-radius: 100px;
     background-color: #5c00b3;
     box-shadow: 0px 0px 7px 1px #5c00b3;
 }
 
 .linkedin{
     padding: 10%;
+    font-size: 30px;
     border-radius: 100px;
     background-color: #1064c4;
     color: white;
@@ -159,14 +158,13 @@ html{
 }
 
 .linkedin:hover{
-    padding: 10%;
-    border-radius: 100px;
     background-color: #5c00b3;
     box-shadow: 0px 0px 7px 1px #5c00b3;
 }
 
 .gmail{
     padding: 10%;
+    font-size: 30px;
     border-radius: 100px;
     background-color: #cd3c30;
     color: white;
@@ -174,8 +172,6 @@ html{
 }
 
 .gmail:hover{
-    padding: 10%;
-    border-radius: 100px;
     background-color: #5c00b3;
     box-shadow: 0px 0px 7px 1px #5c00b3;
 }
@@ -304,10 +300,6 @@ html{
 }
 
 @media screen and (max-width: 900px){
-    .navbar{
-        height: 80px;
-        font-size: 30px;
-    }
     .desc-abt{
         max-width: 78%;
     }
@@ -326,6 +318,9 @@ html{
     .orientadores{
         padding-left: 1%;
         font-size: 20px;
+    }
+    .no-hover:hover{
+        font-size: 30px;
     }
 }
 
@@ -347,6 +342,9 @@ html{
         font-size: 20px;
     }
     .pjct-title{
+        font-size: 30px;
+    }
+    .no-hover:hover{
         font-size: 30px;
     }
 }
@@ -374,5 +372,36 @@ html{
     .orientadores{
         padding-left: 1%;
         font-size: 12px;
+    }
+    .instagram{
+        font-size: 16px;
+        padding: 10%;
+    }
+    .github{
+        font-size: 16px;
+        padding: 10%;
+    }
+    .linkedin{
+        font-size: 16px;
+        padding: 10%;
+    }
+    .gmail{
+        font-size: 16px;
+        padding: 10%;
+    }
+    .instagram:hover{
+        padding: 10%;
+    }
+    .github:hover{
+        padding: 10%;
+    }
+    .linkedin:hover{
+        padding: 10%;
+    }
+    .gmail:hover{
+        padding: 10%;
+    }
+    .no-hover:hover{
+        font-size: 16px;
     }
 }
