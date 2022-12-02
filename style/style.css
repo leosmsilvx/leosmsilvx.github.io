@@ -107,7 +107,8 @@ html{
 .rds-item{
     margin-left: 3%;
     color: white;
-    text-decoration: none;
+    padding-left: 3%;
+    width: 140px;
 }
 
 .rds-item:hover{
@@ -115,43 +116,65 @@ html{
 }
 
 .rds-item:first-child{
-    padding-left: 0;
+    margin-left: 0;
 }
 
 .instagram{
-    border: solid 15px #ff0065;
+    padding: 10%;
     border-radius: 100px;
+    text-align: center;
     background-color: #ff0065;
+    color: white;
+    text-decoration: none;
 }
 
 .instagram:hover{
-    border: solid 15px #5c00b3;
+    padding: 10%;
     border-radius: 100px;
     background-color: #5c00b3;
     box-shadow: 0px 0px 7px 1px #5c00b3;
 }
 
 .github{    
-    border: solid 15px #3c434d;
+    padding: 10%;
     border-radius: 100px;
     background-color: #3c434d;
+    color: white;
+    text-decoration: none;
 }
 
 .github:hover{
-    border: solid 15px #5c00b3;
+    padding: 10%;
     border-radius: 100px;
     background-color: #5c00b3;
     box-shadow: 0px 0px 7px 1px #5c00b3;
 }
 
 .linkedin{
-    border: solid 15px #1064c4;
+    padding: 10%;
     border-radius: 100px;
     background-color: #1064c4;
+    color: white;
+    text-decoration: none;
 }
 
 .linkedin:hover{
-    border: solid 15px #5c00b3;
+    padding: 10%;
+    border-radius: 100px;
+    background-color: #5c00b3;
+    box-shadow: 0px 0px 7px 1px #5c00b3;
+}
+
+.gmail{
+    padding: 10%;
+    border-radius: 100px;
+    background-color: #cd3c30;
+    color: white;
+    text-decoration: none;
+}
+
+.gmail:hover{
+    padding: 10%;
     border-radius: 100px;
     background-color: #5c00b3;
     box-shadow: 0px 0px 7px 1px #5c00b3;
@@ -163,6 +186,7 @@ html{
     font-size: 30px;
     font-weight: 500;
     text-align: center;
+    text-decoration-line: underline;
 }
 
 .projetos{
@@ -178,12 +202,13 @@ html{
     max-width: 60%;
     width: 50%;
     margin: auto;
+    margin-bottom: 2%;
 }
 
 .pjct-title{
     font-weight: 200;
     padding: 2%;
-    color: #457bbe;
+    color: #5c00b3;
 }
 
 .inPjct{
@@ -201,16 +226,24 @@ html{
 
 .pjct-desc{
     padding-bottom: 5%;
+    padding-right: 2%;
     color:grey
 }
 
 
-.title-projetos{
+.div-title-projetos{
     padding-top: 2%;
     text-align: center;
+}
+.title-projetos{
     color: white;
     font-size: 30px;
     font-weight: 500;
+    text-decoration-line: underline;
+}
+
+.pjct-title:hover{
+    font-size: 17px;
 }
 
 .material-symbols-outlined {
@@ -218,5 +251,54 @@ html{
   'FILL' 0,
   'wght' 400,
   'GRAD' 0,
-  'opsz' 48;
+  'opsz' 20;
+}
+
+.sml-link{
+    text-align: end;
+    padding-right: 1%;
+    padding-bottom: 1%;
+    color:#5c00b3;
+    font-size: 13px;
+}
+
+.text-span{
+    color: grey;
+}
+
+.list-item{
+    margin-left: 6%;
+    width: 100%;
+    display: list-item;
+    text-decoration-line: underline;
+    color: white;
+}
+
+.list-item:hover{
+    color:#5c00b3;
+    font-size: 18px;
+}
+
+.no-hover:hover{
+    font-size: 16px;
+}
+
+.span-title{
+    font-size: 13px;
+    text-decoration: none;
+    color:grey;
+}
+
+.orientadores{
+    padding-left: 1%;
+    font-size: 11px;
+}
+
+.all-rights{
+    font-size: 13px;
+    color: grey;
+    font-family: sans-serif;
+    text-align: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
 }
