@@ -303,7 +303,7 @@ html{
     padding-bottom: 1%;
 }
 
-@media (max-width: 900px){
+@media screen and (max-width: 900px){
     .desc-abt{
         max-width: 78%;
     }
@@ -313,18 +313,36 @@ html{
     .pjcts-item{
         max-width: 78%;
     }
-    
+    .pjct-title{
+        font-size: 40px;
+    }
+    .pjct-desc{
+        font-size: 30px;
+    }
+    .orientadores{
+        padding-left: 1%;
+        font-size: 25px;
+    }
 }
 
-@media (max-width: 700px){
+@media screen and (min-width: 700px){
     .desc-abt{
-        max-width: 98%;
+        max-width: 91%;
     }
     .pjcts-item{
-        max-width: 98%;
+        max-width: 91%;
     }
     .pjcts-item{
-        max-width: 98%;
+        max-width: 91%;
     }
-    
+    .pjct-desc{
+        font-size: 30px;
+    }
+    .orientadores{
+        padding-left: 1%;
+        font-size: 25px;
+    }
+    .pjct-title{
+        font-size: 40px;
+    }
 }
