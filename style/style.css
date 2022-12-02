@@ -347,6 +347,28 @@ html{
     .no-hover:hover{
         font-size: 30px;
     }
+    .sobre{
+        padding-top: 5%;
+        display: block;
+    }
+    .minha-foto{
+        width: 280px;
+    }
+    .h-hrow{
+        display: block;
+    }
+    .inPjct{
+        display: block;
+    }
+    .pjct-img{
+        text-align: center;
+    }
+    .pjct-img-i{
+        width: 140px;
+    }
+    .pjct-desc{
+        padding-left: 4%;
+    }
 }
 
 @media screen and (min-width: 1200px){
@@ -355,6 +377,7 @@ html{
         font-size: 20px;
     }
     .desc-abt{
+        padding-top: 0;
         max-width: 59%;
     }
     .pjcts-item{
@@ -407,5 +430,24 @@ html{
     .hrow{
         max-width: 70%;
         margin-top: 2%;
+    }
+    .sobre{
+        padding-top: 2%;
+        display: flex;
+    }
+    .minha-foto{
+        width: 200px;
+    }
+    .h-hrow{
+        width: 0;
+    }
+    .inPjct{
+        display: flex;
+    }
+    .pjct-img-i{
+        width: 70px;
+    }
+    .pjct-desc{
+        padding-left: 0%;
     }
 }
