@@ -92,7 +92,7 @@ html{
 
 .hrow{
     margin: auto;
-    border: solid 1px grey;
+    border-bottom: solid 1px grey;
     max-width: 55%;
     margin-top: 3%;
 }
