@@ -74,7 +74,7 @@ html{
 }
 
 .desc-abt{
-    width: 50%;
+    max-width: 50%;
     margin: auto;
     color: white;   
     padding-top: 2%;
@@ -200,7 +200,7 @@ html{
     border-radius: 15px;
     background-color: #0f0f0f;
     max-width: 60%;
-    width: 50%;
+    max-width: 50%;
     margin: auto;
     margin-bottom: 2%;
 }
@@ -305,10 +305,10 @@ html{
 
 @media (max-width: 900px){
     .desc-abt{
-        width: 78%;
+        max-width: 78%;
     }
     .pjcts-item{
-        width: 78%;
+        max-width: 78%;
     }
     .pjcts-item{
         max-width: 78%;
@@ -318,10 +318,10 @@ html{
 
 @media (max-width: 700px){
     .desc-abt{
-        width: 98%;
+        max-width: 98%;
     }
     .pjcts-item{
-        width: 98%;
+        max-width: 98%;
     }
     .pjcts-item{
         max-width: 98%;
