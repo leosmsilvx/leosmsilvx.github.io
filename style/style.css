@@ -93,8 +93,8 @@ html{
 .hrow{
     margin: auto;
     border-bottom: solid 1px grey;
-    max-width: 55%;
-    margin-top: 3%;
+    max-width: 95%;
+    margin-top: 10%;
 }
 
 .redes-sociais{
@@ -403,5 +403,9 @@ html{
     }
     .no-hover:hover{
         font-size: 16px;
+    }
+    .hrow{
+        max-width: 70%;
+        margin-top: 2%;
     }
 }
