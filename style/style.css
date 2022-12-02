@@ -302,3 +302,29 @@ html{
     padding-top: 1%;
     padding-bottom: 1%;
 }
+
+@media (max-width: 900px){
+    .desc-abt{
+        width: 78%;
+    }
+    .pjcts-item{
+        width: 78%;
+    }
+    .pjcts-item{
+        max-width: 78%;
+    }
+    
+}
+
+@media (max-width: 700px){
+    .desc-abt{
+        width: 98%;
+    }
+    .pjcts-item{
+        width: 98%;
+    }
+    .pjcts-item{
+        max-width: 98%;
+    }
+    
+}
