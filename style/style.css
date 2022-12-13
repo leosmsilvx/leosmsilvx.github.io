@@ -3,6 +3,7 @@
 body{
     margin: 0; 
     background-color: #2b2b2b;
+    overflow-x: hidden;
 }
 
 html{
