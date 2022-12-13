@@ -44,7 +44,6 @@ async function mostrarOutrosTextos(){
     await esperarTempo(1); 
     await escreverTexto("Alguns Repositórios em que trabalhei:", "#repositoriesTxt", cursorInputBR, 70);
     await escreverTexto("Todos os projetos são públicos e de uso educacional.", "#subtitleTxt", cursorInputSR, 40);
-    continueBlinking(cursorInputSR);
 }
 
 function mediasAnimation(){
@@ -65,7 +64,7 @@ window.addEventListener('scroll', async function() {
     
     if((positionTextScl.top >= 0 && positionTextScl.bottom <= window.innerHeight) && noViewTxt == true) {
         noViewTxt = false;
-        escreverTexto("Minhas redes sociais e meios de contato:", "#sclMediaText", cursorInputSW, 70);
+        escreverTexto("Redes sociais e meios de contato:", "#sclMediaText", cursorInputSW, 40);
         mediasAnimation();
     }
 });
