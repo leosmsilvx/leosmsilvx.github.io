@@ -302,6 +302,30 @@ html{
     padding-bottom: 1%;
 }
 
+@keyframes blink {
+    0% {opacity: 1;}
+    40% {opacity: 1;}
+    60% {opacity: 0;}
+    100% {opacity: 0;}
+}
+
+.input-cursor-b{
+    display: inline-block;
+    width: 3px;
+    height: 60px;
+    background-color: white;
+    animation: blink .3s linear infinite alternate;
+}
+
+.input-cursor-s{
+    display: inline-block;
+    width: 2px;
+    height: 20px;
+    background-color: #5d12a3;
+    animation: blink .3s linear infinite alternate;
+}
+
+
 @media screen and (max-width: 900px){
     .desc-abt{
         max-width: 78%;
