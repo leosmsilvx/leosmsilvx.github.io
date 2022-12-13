@@ -412,6 +412,24 @@ html{
     animation: blink .2s linear infinite alternate;
 }
 
+.input-cursor-br{
+    display: none;
+    width: 3px;
+    height: 30px;
+    margin-left: 2px;
+    background-color: white;
+    animation: blink .2s linear infinite alternate;
+}
+
+.input-cursor-sr{
+    display: none;
+    width: 3px;
+    height: 10px;
+    margin-left: 2px;
+    background-color: gray;
+    animation: blink .2s linear infinite alternate;
+}
+
 
 @media screen and (max-width: 900px){
     .desc-abt{
