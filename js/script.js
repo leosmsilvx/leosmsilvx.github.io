@@ -2,6 +2,7 @@
 mostrarTextos();
 let noViewTxt = true;
 
+
 //"Typing" text
 const cursorInputB = document.getElementsByClassName("input-cursor-b");
 const cursorInputS = document.getElementsByClassName("input-cursor-s");
@@ -35,6 +36,10 @@ async function mostrarTextos(){
     escreverTexto("Dev Jr.", "#devJr", cursorInputS);
 }
 
+function mediasAnimation(){
+    document.getElementById("animationRedes").style.animation="slide 2s ease-out both";
+}
+
 //Call animation just when is in user view
 window.addEventListener('scroll', async function() {
     var textScl = document.querySelector('#sclmedia');
@@ -42,7 +47,8 @@ window.addEventListener('scroll', async function() {
     
     if((positionTextScl.top >= 0 && positionTextScl.bottom <= window.innerHeight) && noViewTxt == true) {
         noViewTxt = false;
-        await escreverTexto("Minhas redes sociais e meios de contato:", "#sclMediaText", cursorInputSW);
+        escreverTexto("Minhas redes sociais e meios de contato:", "#sclMediaText", cursorInputSW);
+        mediasAnimation();
     }
 });
 
