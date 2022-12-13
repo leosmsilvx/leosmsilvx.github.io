@@ -1,6 +1,6 @@
 //Call on start
 mostrarTextos();
-let noView = true;
+let noViewTxt = true;
 
 //"Typing" text
 const cursorInputB = document.getElementsByClassName("input-cursor-b");
@@ -37,11 +37,11 @@ async function mostrarTextos(){
 
 //Call animation just when is in user view
 window.addEventListener('scroll', async function() {
-    var element = document.querySelector('#sclmedia');
-    var position = element.getBoundingClientRect();
+    var textScl = document.querySelector('#sclmedia');
+    var positionTextScl = textScl.getBoundingClientRect();
     
-    if((position.top >= 0 && position.bottom <= window.innerHeight) && noView == true) {
-        noView = false;
+    if((positionTextScl.top >= 0 && positionTextScl.bottom <= window.innerHeight) && noViewTxt == true) {
+        noViewTxt = false;
         await escreverTexto("Minhas redes sociais e meios de contato:", "#sclMediaText", cursorInputSW);
     }
 });
