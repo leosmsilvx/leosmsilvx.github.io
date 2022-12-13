@@ -201,7 +201,7 @@ html{
     max-width: 50%;
     margin: auto;
     margin-bottom: 2%;
-    box-shadow: 4px 4px 16px #0f0f0f, -4px -4px 16px #0f0f0f;
+    box-shadow: 2px 2px 10px grey, -4px -4px 10px black;
 }
 
 .pjct-title{
@@ -310,7 +310,7 @@ html{
 }
 
 .input-cursor-b{
-    display: inline-block;
+    display: none;
     width: 3px;
     height: 60px;
     background-color: white;
@@ -318,11 +318,20 @@ html{
 }
 
 .input-cursor-s{
-    display: inline-block;
+    display: none;
     width: 2px;
     height: 20px;
     background-color: #5d12a3;
     animation: blink .3s linear infinite alternate;
+}
+
+.input-cursor-sw{
+    display: none;
+    width: 3px;
+    height: 30px;
+    margin-left: 2px;
+    background-color: white;
+    animation: blink .2s linear infinite alternate;
 }
 
 
