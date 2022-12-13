@@ -196,7 +196,6 @@ html{
 .pjct-background{
     background-image: linear-gradient(to left, #0f0f0f, #5c00b3, #0f0f0f); 
     animation: gradiente 3s infinite alternate;
-    animation: disBlur 2.5s linear alternate;
     background-size: 500% 100%;
     max-width: 55%;
     margin: auto;
@@ -228,10 +227,13 @@ html{
         filter: blur(2px);
     }
     70%{
-        filter: blur(1.5px);
+        filter: blur(1.5);
     }
     80%{
         filter: blur(1px);
+    }
+    85%{
+        filter: blur(.75px);
     }
     90%{
         filter: blur(.5px);
@@ -247,6 +249,7 @@ html{
 
 
 .pjcts-item{
+    animation: disBlur 2s linear alternate;
     border: solid 1px gray;
     border-radius: 15px;
     background-color: #0f0f0f;
