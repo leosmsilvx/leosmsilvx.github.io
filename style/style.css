@@ -441,6 +441,9 @@ html{
     .icon-redes{
         display: none;
     }
+    .input-cursor-s{
+        height: 30px;
+    }
 }
 
 @media screen and (min-width: 1200px){
@@ -497,5 +500,8 @@ html{
     }
     .icon-redes{
         display: inline;
+    }
+    .input-cursor-s{
+        height: 20px;
     }
 }
