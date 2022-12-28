@@ -147,11 +147,15 @@ html{
     text-align: center;
     padding: 12px;
     box-shadow: 0 10px 20px rgba(0,0,0,1);
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
 }
 
 .rds-item:hover{
     color: white;
-    box-shadow: 0 5px 30px #5c00b3;
+    box-shadow: 0 0 30px #5c00b3;
+    transition: all .2s;
 }
 
 .scl-title{
@@ -251,7 +255,8 @@ html{
 }
 
 .pjct-title:hover{
-    font-size: 17px;
+    font-weight: 800;
+    transition: all .2s;
 }
 
 .material-symbols-outlined {
@@ -270,6 +275,11 @@ html{
     font-size: 13px;
 }
 
+.sml-link:hover{
+    font-weight: 800;
+    transition: all .2s;
+}
+
 .text-span{
     color: grey;
 }
@@ -284,11 +294,12 @@ html{
 
 .list-item:hover{
     color:#5c00b3;
-    font-size: 18px;
+    font-weight: 700;
+    transition: all .2s;
 }
 
 .no-hover:hover{
-    font-size: 16px;
+    font-weight: 500;
 }
 
 .span-title{
