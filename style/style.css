@@ -1,5 +1,5 @@
 :root{
-    --active-color: #9a00d4;
+    --active-color: #ff008c;
     --background-color: #F5F5F5;
     --black: #222;
     --white: #fff;
@@ -8,13 +8,17 @@
     --active-color50: color-mix(in srgb, var(--active-color) 31%, transparent);
     --active-color80: color-mix(in srgb, var(--active-color) 50%, transparent);
     --active-color30: color-mix(in srgb, var(--active-color) 19%, transparent);
+    --active-color20: color-mix(in srgb, var(--black) 20%, transparent);
+    --active-color14: color-mix(in srgb, var(--black) 14%, transparent);
+    --active-color12: color-mix(in srgb, var(--black) 12%, transparent);
 }
 
 
 html{
     font-family: Arial, Helvetica, sans-serif;
     scroll-behavior:smooth;
-    color: var(--black)
+    color: var(--black);
+
 }
 
 body{
@@ -40,6 +44,10 @@ hr{
     margin: 2%;
 }
 
+.shadow{
+    box-shadow: 0 1px 3px 0 var(--active-color20), 0 1px 1px 0 var(--active-color14), 0 2px 1px -1px var(--active-color12);
+}
+
 .upArrowPos{
     height: 100vh;
     position: fixed;
@@ -51,7 +59,6 @@ hr{
 
 .upArrow{
     background-color: var(--active-color80);
-    box-shadow: 0 0 20px var(--active-color);
     border-radius: 100%;
     width: 50px;
     height: 50px;
@@ -85,7 +92,6 @@ nav{
     justify-content: center;
     background-color: var(--white);
     color: var(--active-color);
-    box-shadow: 0 1px 3px 0 #00000033, 0 1px 1px 0 #00000024, 0 2px 1px -1px #0000001f; /*Change for variable later*/
     font-weight: 600;
     font-size: 18px;
 }
@@ -116,7 +122,6 @@ nav{
     padding: 10px;
     background-color: white;
     border-radius: 20px;
-    box-shadow: 0 1px 3px 0 #00000033, 0 1px 1px 0 #00000024, 0 2px 1px -1px #0000001f; /*Change for variable later*/
 }
 
 .title{
@@ -158,11 +163,16 @@ nav{
 }
 
 .img{
+    max-width: 30%;
+}
+
+.box-img{
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 10px;
-    max-width: 30%;
+    padding: 20px;
+    border-radius: 20px;
 }
 
 #myself{
@@ -173,4 +183,54 @@ nav{
 
 .history{
     max-width: 70%;
+}
+
+.projects{
+    display: flex;
+    justify-content: space-around;
+}
+
+#projects{
+    height: 150vh;
+}
+
+.card{
+    width: 30%;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.card-title{
+    color: var(--white);
+    padding: 2% 2% 1% 2%;
+    font-weight: 600;  
+    background-color: var(--active-color); 
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-description{
+    padding: 2% 2% 1% 2%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.img-project{
+    align-self: center;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    border-radius: 8px;
+}
+
+.card-footer{    
+    padding: 2% 2% 1% 2%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.link{
+    color: var(--active-color80);
+    text-decoration: underline;
 }

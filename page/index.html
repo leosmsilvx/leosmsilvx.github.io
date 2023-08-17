@@ -9,23 +9,25 @@
 </head>
 <body>
     <script src="../js/script.js"></script>
-    <nav id="nav">
+    <nav id="nav" class="shadow">
         <div class="navbar">
-            <div class="nav-item"><a href="#abt" class="nav-link"><p>Sobre</p><span class="material-symbols-outlined">expand_more</span></a></div>
-            <div class="nav-item"><a href="#cnt" class="nav-link"><p>Contato</p><span class="material-symbols-outlined">expand_more</span></a></div>
-            <div class="nav-item"><a href="#pjct" class="nav-link"><p>Projetos</p><span class="material-symbols-outlined">expand_more</span></a></div>
+            <div class="nav-item"><a href="#abt" class="nav-link"><p>Sobre</p></a></div>
+            <div class="nav-item"><a href="#cnt" class="nav-link"><p>Contato</p></a></div>
+            <div class="nav-item"><a href="#pjct" class="nav-link"><p>Projetos</p></a></div>
         </div>
     </nav>
     <div class="main">
-        <div class="bigcard" id="abt">
+        <div class="bigcard shadow" id="abt">
             <div class="title">
                 <h2>Sobre</h2>
             </div>
             <div class="aboutme">
                 <div class="img">
-                    <p><span class="bold">Leonardo Moura</span></p>
-                    <img src="../imgs/eu.jpg" alt="leosmsilvx" id="myself">
-                    <p><span class="bold">Desenvolvedor Fullstack</span></p>
+                    <div class="box-img shadow">
+                        <p><span class="bold">Leonardo Moura</span></p>
+                        <img src="../imgs/eu.jpg" alt="leosmsilvx" id="myself">
+                        <p><span class="bold">Desenvolvedor <span class="bold-active">Fullstack</span></span></p>
+                    </div>
                 </div>
                 <div class="history">
                     <p>Atualmente sou estudante de <span class="bold-active">Engenharia da computação</span> e formado como <span class="bold-active">Técnico em Informática</span> pelo CEFET-MG (2020-2022).</p><br>
@@ -35,6 +37,7 @@
                         <li>Java</li>
                         <li>JavaScript</li>
                         <li>TypeScript</li>
+                        <li>SQL</li>
                         <li>Dart</li>
                         <li>Bash</li>
                         <li>HTML/CSS</li>
@@ -43,34 +46,45 @@
                     <ul class="list-active">
                         <li>Angular</li>
                         <li>JSP/JSTL</li>
+                        <li>.NET</li>
                         <li>Flutter</li>
                         <li>Bootstrap</li>
                         <li>Git</li>
                     </ul>
+                    <p>A área de <span class="bold-active">desenvolvimento de software</span> é a que mais me atrai, mas tenho muito interesse em áreas como:</p>
+                    <ul class="list-active">
+                        <li>Inteligencia Artifical</li>
+                        <li>Segurança cibernética</li>                        
+                        <li>Banco de dados</li>
+                    </ul>
+                    <p>Sempre busco me inteirar com novas tecnologias, seja com cursos onlines, notícias, livros técnicos, etc.</p>
+                    <p>A área da tecnologia da informação está sempre em mudança e é sempre necessário nos adaptarmos a ela.</p>
                 </div>
             </div>
         </div>
         <hr>
-        <div class="bigcard">            
+        <div class="bigcard shadow" id="projects">            
             <div class="title" id="pjct">
                 <h2>Projetos</h2>
             </div>
             <div class="projects">
-                <div class="card">
-                    <div class="card-title">
-                        <p>Titulo</p>
+                <div class="card shadow">
+                    <div class="card-title shadow">
+                        <p>Flex Boxes Project</p>
+                        <span class="material-symbols-outlined">open_in_new </span>
                     </div>
                     <div class="card-description">
-                        <p>Descricao descricao descricao descricao <br>  descricao descricao descricao descricao <br>  descricao descricao descricao descricao <br>  descricao descricao descricao.</p>
+                        <img src="../imgs/flex-boxes.png" alt="crudjs" class="img-project shadow">
+                        <a>Projeto de Programação desenvolvido para aprender e ensinar sobre flex-boxes em <span class="bold-active">HTML e CSS</span>, utilizei também <span class="bold-active">JavaScript</span> para tornar mais dinâmico as alterações.</a>
                     </div>
                     <div class="card-footer">
-                        <p>Link <span class="link">repositorio</span></p>
+                        <p><span class="link"><span class="material-symbols-outlined">folder_data </span></span></p>
                     </div>
                 </div>
             </div>
         </div>        
         <hr>
-        <div class="bigcard">
+        <div class="bigcard shadow">
             <div class="title" id="cnt">
                 <h2>Contatos</h2>
             </div>
