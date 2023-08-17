@@ -4,92 +4,86 @@
     <meta charset="UTF-8">
     <link rel="icon" href="../imgs/icon.png">
     <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>leosmsilvx</title>
 </head>
-<body style="margin: 0; background-color: #fffeee;">
+<body>
     <script src="../js/script.js"></script>
     <nav id="nav">
         <div class="navbar">
-            <div class="nav-item"><a href="#abt">Sobre</a></div>
-            <div class="nav-item"><a href="#cnt">Contato</a></div>
-            <div class="nav-item"><a href="#pjct">Projetos</a></div>
+            <div class="nav-item"><a href="#abt" class="nav-link"><p>Sobre</p><span class="material-symbols-outlined">expand_more</span></a></div>
+            <div class="nav-item"><a href="#cnt" class="nav-link"><p>Contato</p><span class="material-symbols-outlined">expand_more</span></a></div>
+            <div class="nav-item"><a href="#pjct" class="nav-link"><p>Projetos</p><span class="material-symbols-outlined">expand_more</span></a></div>
         </div>
     </nav>
     <div class="main">
-        <div class="title" id="abt">
-            <h2>Sobre</h2>
-        </div>
-        <div class="teste"></div>
-        <div class="title" id="pjct">
-            <h2>Projetos</h2>
-        </div>
-        <div class="projects">
-            <div class="card">
-                <div class="card-title">
-                    <p>Titulo</p>
-                </div>
-                <div class="card-description">
-                    <p>Descricao descricao descricao descricao <br>  descricao descricao descricao descricao <br>  descricao descricao descricao descricao <br>  descricao descricao descricao.</p>
-                </div>
-                <div class="card-footer">
-                    <p>Link <span class="link">repositorio</span></p>
-                </div>
+        <div class="bigcard" id="abt">
+            <div class="title">
+                <h2>Sobre</h2>
             </div>
-            <div class="card">
-                <div class="card-title">
-                    <p>Titulo</p>
+            <div class="aboutme">
+                <div class="img">
+                    <p><span class="bold">Leonardo Moura</span></p>
+                    <img src="../imgs/eu.jpg" alt="leosmsilvx" id="myself">
+                    <p><span class="bold">Desenvolvedor Fullstack</span></p>
                 </div>
-                <div class="card-description">
-                    <p>Descricao descricao descricao descricao <br>  descricao descricao descricao descricao <br>  descricao descricao descricao descricao <br>  descricao descricao descricao.</p>
-                </div>
-                <div class="card-footer">
-                    <p>Link <span class="link">repositorio</span></p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-title">
-                    <p>Titulo</p>
-                </div>
-                <div class="card-description">
-                    <p>Descricao descricao descricao descricao <br>  descricao descricao descricao descricao <br>  descricao descricao descricao descricao <br>  descricao descricao descricao.</p>
-                </div>
-                <div class="card-footer">
-                    <p>Link <span class="link">repositorio</span></p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-title">
-                    <p>Titulo</p>
-                </div>
-                <div class="card-description">
-                    <p>Descricao descricao descricao descricao <br>  descricao descricao descricao descricao <br>  descricao descricao descricao descricao <br>  descricao descricao descricao.</p>
-                </div>
-                <div class="card-footer">
-                    <p>Link <span class="link">repositorio</span></p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-title">
-                    <p>Titulo</p>
-                </div>
-                <div class="card-description">
-                    <p>Descricao descricao descricao descricao <br>  descricao descricao descricao descricao <br>  descricao descricao descricao descricao <br>  descricao descricao descricao.</p>
-                </div>
-                <div class="card-footer">
-                    <p>Link <span class="link">repositorio</span></p>
+                <div class="history">
+                    <p>Atualmente sou estudante de <span class="bold-active">Engenharia da computação</span> e formado como <span class="bold-active">Técnico em Informática</span> pelo CEFET-MG (2020-2022).</p><br>
+                    <p>Como <span class="bold-active">Desenvolvedor Fullstack</span>, tenho conhecimento em <span class="underline-active">linguagens de programação</span>:</p>
+                    <ul class="list-active">
+                        <li>C/C++</li>
+                        <li>Java</li>
+                        <li>JavaScript</li>
+                        <li>TypeScript</li>
+                        <li>Dart</li>
+                        <li>Bash</li>
+                        <li>HTML/CSS</li>
+                    </ul>
+                    <p>Alguns outros <span class="underline-active">frameworks e tecnologias</span> na qual também tenho conhecimento são:</p>
+                    <ul class="list-active">
+                        <li>Angular</li>
+                        <li>JSP/JSTL</li>
+                        <li>Flutter</li>
+                        <li>Bootstrap</li>
+                        <li>Git</li>
+                    </ul>
                 </div>
             </div>
         </div>
-        <div class="title" id="cnt">
-            <h2>Contatos</h2>
+        <hr>
+        <div class="bigcard">            
+            <div class="title" id="pjct">
+                <h2>Projetos</h2>
+            </div>
+            <div class="projects">
+                <div class="card">
+                    <div class="card-title">
+                        <p>Titulo</p>
+                    </div>
+                    <div class="card-description">
+                        <p>Descricao descricao descricao descricao <br>  descricao descricao descricao descricao <br>  descricao descricao descricao descricao <br>  descricao descricao descricao.</p>
+                    </div>
+                    <div class="card-footer">
+                        <p>Link <span class="link">repositorio</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>        
+        <hr>
+        <div class="bigcard">
+            <div class="title" id="cnt">
+                <h2>Contatos</h2>
+            </div>
+            <div class="contats"></div>
         </div>
-        <div class="teste"></div>
     </div>
     <div class="upArrowPos">
         <a href="#nav" class="upArrow">
-                ˄
-            </>
+            <span class="material-symbols-outlined">arrow_upward</span>
         </a>
     </div>
+    <footer>
+        <div class="all-rights">© leosmsilvx</div>
+    </footer>
 </body>
 </html>
