@@ -1,11 +1,43 @@
+:root{
+    --active-color: #9a00d4;
+    --background-color: #F5F5F5;
+    --black: #222;
+    --white: #fff;
+    --light-text: #444;
+    
+    --active-color50: color-mix(in srgb, var(--active-color) 31%, transparent);
+    --active-color80: color-mix(in srgb, var(--active-color) 50%, transparent);
+    --active-color30: color-mix(in srgb, var(--active-color) 19%, transparent);
+}
+
+
 html{
     font-family: Arial, Helvetica, sans-serif;
-    scroll-behavior:smooth
+    scroll-behavior:smooth;
+    color: var(--black)
+}
+
+body{
+    margin: 0;
+    background-color: var(--background-color);
 }
 
 a{
     text-decoration: none;
     color: currentColor;
+}
+
+p{
+    margin: 0;
+}
+
+h2{
+    margin: 10px;
+}
+
+hr{
+    border-color: var(--active-color50);
+    margin: 2%;
 }
 
 .upArrowPos{
@@ -18,27 +50,42 @@ a{
 }
 
 .upArrow{
-    background-color: #9800d480;
-    box-shadow: 0 0 20px #9800d4ef;
+    background-color: var(--active-color80);
+    box-shadow: 0 0 20px var(--active-color);
     border-radius: 100%;
     width: 50px;
     height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
+    color: var(--white);
     font-size: 30px;
     font-weight: 800;
+}
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--background-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--active-color30);
+    border-radius: 10px;
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background: var(--active-color50);
 }
 
 nav{
     height: 50px;
     display: flex;
     justify-content: center;
-    background-color: #9800d428;
-    border-bottom: 1px solid #9800d430;
-    box-shadow: 0 0 40px#9800d480;
-    color: #9800d4;
+    background-color: var(--white);
+    color: var(--active-color);
+    box-shadow: 0 1px 3px 0 #00000033, 0 1px 1px 0 #00000024, 0 2px 1px -1px #0000001f; /*Change for variable later*/
     font-weight: 600;
     font-size: 18px;
 }
@@ -50,55 +97,80 @@ nav{
     align-items: center;
 }
 
-.projects{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    width: 80%;
-    margin: auto;
-}
-
-.card{
-    width: 25%;
-    height: 25vh;
-    margin-top: 2%;
-    border-radius: 20px;
-    padding: 20px;
-    border: solid 2px #9800d450;
-    background-color: #fff;
+.nav-link{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    align-items: center;
 }
 
-.card-title{
-    color:#9800d4;
-    font-weight: 900;
-    text-decoration: underline;
-    font-size: 20px;
+.all-rights{
+    color: var(--light-text);
 }
 
-.card-description{
-    color: #444
-}
-
-.card-footer{
+.bigcard{
+    height: 90vh;
     display: flex;
-    justify-content: end;
-}
-
-.link{
-    color: #9800d4;
-    text-decoration: underline;
+    flex-direction: column;
+    width: 88%;
+    margin: 5vh auto ;
+    padding: 10px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 1px 3px 0 #00000033, 0 1px 1px 0 #00000024, 0 2px 1px -1px #0000001f; /*Change for variable later*/
 }
 
 .title{
-    display: flex;
-    justify-content: space-around;
-    color: #9800d4;
+    color: var(--active-color);
     text-decoration: underline;
+    text-align: center;
+    margin-bottom: 5vh;
 }
 
-.teste{
-    height: 100vh;
+.bold{
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.bold-active{
+    color: var(--active-color);
+    font-weight: 700;
+}
+
+.list-active{
+    list-style-type: none;
+}
+
+.list-active li:before{
+    content: "-";
+    font-weight: 700;
+    color:var(--active-color);
+    margin-right: 8px;
+}  
+
+.underline-active{
+    text-decoration: underline;
+    text-decoration-color: var(--active-color);
+}
+
+.aboutme{
+    display: flex;
+    justify-content: space-around;
+}
+
+.img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    max-width: 30%;
+}
+
+#myself{
+    border-radius: 50%;
+    max-width: 250px;
+    box-shadow: 0 1px 10px 0 var(--active-color);
+}
+
+.history{
+    max-width: 70%;
 }
