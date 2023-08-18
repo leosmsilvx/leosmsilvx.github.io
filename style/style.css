@@ -1,5 +1,5 @@
 :root{
-    --active-color: #ff008c;
+    --active-color: #5900ff;
     --background-color: #F5F5F5;
     --black: #222;
     --white: #fff;
@@ -114,7 +114,7 @@ nav{
 }
 
 .bigcard{
-    height: 90vh;
+    height: fit-content;
     display: flex;
     flex-direction: column;
     width: 88%;
@@ -122,13 +122,19 @@ nav{
     padding: 10px;
     background-color: white;
     border-radius: 20px;
+    padding-bottom: 5vh;
 }
 
 .title{
     color: var(--active-color);
-    text-decoration: underline;
     text-align: center;
     margin-bottom: 5vh;
+}
+
+.subtitle{
+    color: var(--active-color80);
+    text-align: center;
+    font-size: 15px;
 }
 
 .bold{
@@ -187,17 +193,19 @@ nav{
 
 .projects{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-inline: 3vw;
 }
 
 #projects{
-    height: 150vh;
+    height: fit-content;
 }
 
 .card{
     width: 30%;
     border-radius: 8px;
-    overflow: hidden;
+    overflow: hidden; 
 }
 
 .card-title{
@@ -222,10 +230,11 @@ nav{
     width: auto;
     height: auto;
     border-radius: 8px;
+    height: 200px;
 }
 
 .card-footer{    
-    padding: 2% 2% 1% 2%;
+    padding: 2% 6% 1% 2%;
     display: flex;
     justify-content: flex-end;
 }
@@ -233,4 +242,9 @@ nav{
 .link{
     color: var(--active-color80);
     text-decoration: underline;
+}
+
+.topic{
+    margin-top: 0;
+    margin: 3vh;
 }
