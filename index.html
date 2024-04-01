@@ -1,6 +1,38 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <style>
+      @keyframes blink {
+          0% {opacity: 1;}
+          40% {opacity: 1;}
+          60% {opacity: 0;}
+          100% {opacity: 0;}
+      }
+
+      #textNameCursor{
+          display: inline-block;
+          width: 2px;
+          height: 40px;
+          background-color: rgb(252, 40, 89);
+          animation: blink .3s linear infinite alternate;
+      }
+      ::-webkit-scrollbar {
+          width: 8px;
+      }
+
+      ::-webkit-scrollbar-track {
+          background: rgb(45, 45, 45);
+      }
+
+      ::-webkit-scrollbar-thumb {
+          background: #fc285941;
+          border-radius: 10px;
+      }
+        
+      ::-webkit-scrollbar-thumb:hover {
+          background: rgba(252, 40, 89, 0.623);
+      }
+    </style>
     <link
       rel="icon"
       href="https://images.builderservices.io/s/cdn/v1.0/i/m?url=https%3A%2F%2Fstorage.googleapis.com%2Fproduction-hostgator-brasil-v1-0-5%2F515%2F1764515%2FpqJ6JnDc%2Fcb97f917ccfc4ae281f22fa3a245bba4&amp;methods=resize%2C500%2C5000"
@@ -8722,27 +8754,25 @@
                                   href="https://github.com/leosmsilvx"
                                   target="_blank"
                                   rel="noopener noreferrer"
-                                  >Leonardo Moura<br /></a></font></b
+                                  id="textName"
+                                  ></a>
+                                  <span id="textNameCursor"></span>
+                                </font></b
                             ><span
                               data-prop="title"
                               class="ck-editable-element"
                               data-editable="basic"
                               style="display: none"
                             ></span>
+                            
                           </h2>
                           <div class="kv-ee-section-text">
                             <p
-                              class="kv-ee-section-subtitle kv-ee-section-subtitle--sm"
                               data-type="text"
                               tabindex="0"
-                            >
-                              Desenvolvedor Fullstack<br /><span
-                                data-prop="subtitle"
-                                class="ck-editable-element"
-                                data-editable="basic"
-                                style="display: none"
-                              ></span>
-                            </p>
+                              id="textFunction"
+                              style="text-decoration: none; cursor:inherit;"
+                            >Desenvolvedor Fullstack</p>
                           </div>
                         </div>
                       </div>
@@ -9506,6 +9536,7 @@
             title: "Portfólio",
             uriPath: "index",
           };
+          
         </script>
       </div>
     </div>
@@ -10323,6 +10354,15 @@
         useHostingApi: true,
         environment: "prod",
       };
+          animateText("Leonardo Moura", "textName");
+          async function animateText(content, idContent) {
+            let letras = content.split("");
+            for(let i = 0; i < letras.length; i++){
+              await new Promise(resolve => setTimeout(resolve, 70)).then(() => {
+                document.getElementById(idContent).append(letras[i]);
+              });
+            }
+          }
     </script>
   </body>
 </html>
