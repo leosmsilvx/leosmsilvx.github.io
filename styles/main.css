@@ -1,0 +1,39 @@
+@import url(https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);
+@import url(keyframes.css);
+@import url(media.css);
+@import url(home.css);
+
+:root {
+    --bg-color: #0B0909;
+    --second-color: #0D0D0F;
+    --third-color: #0C0A0A;
+    --border-color: #201f2c;
+    --actv-color: #B2A7F6;
+    --tag-color: #1A1617;
+    --white-color: #eee;
+    --black-color: #111;
+    --grey-color: #888;
+
+    --border-radius: 8px;
+
+    --title-size: 23px;
+    --subtitle-size: 18px;
+}
+
+a {
+    cursor: pointer;
+    color: var(--actv-color);
+}
+
+button {
+    cursor: pointer;
+    width: 100%;
+    font-family: Calibri, sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--white-color);
+    font-family: Calibri, sans-serif;
+}
