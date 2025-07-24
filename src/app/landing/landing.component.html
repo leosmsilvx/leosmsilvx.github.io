@@ -1,0 +1,231 @@
+<div class="blur" *ngIf="loading">
+    <div class="loading-dots">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</div>
+<main>
+    <div class="decorator decorator-left desktop-only"></div>
+    <div class="decorator decorator-right desktop-only"></div>
+    <div class="myself desktop-only">
+        <img src="imgs/myself.jpg" alt="myself">
+    </div>
+    <div class="buttons desktop-only">        
+        <button (click)="changeLanguage()" class="button-animation">
+            <img class="language-icon" src="imgs/brasil-canada.svg" alt="Change language icon">
+            <span class="button-text">{{'BT-LANGUAGE' | translate}}</span>
+        </button>
+        <button (click)="changeTheme()" class="button-animation">
+            <img class="theme-icon" *ngIf="isLightTheme" src="imgs/dark-theme.svg" alt="Change theme icon">
+            <img class="theme-icon" *ngIf="!isLightTheme" src="imgs/light-theme.svg" alt="Change theme icon">
+            <span class="button-text">{{(isLightTheme ? 'BT-THEME-DARK' : 'BT-THEME-LIGHT') | translate}}</span>
+        </button>
+    </div>
+    <header>
+        <div class="medium-text name">
+            <span>Leonardo Moura</span>            
+            <div class="buttons mobile-only">        
+                <button (click)="changeLanguage()" class="button-animation">
+                    <img class="language-icon" src="imgs/brasil-canada.svg" alt="Change language icon">
+                    <span class="button-text">{{'BT-LANGUAGE' | translate}}</span>
+                </button>
+                <button (click)="changeTheme()" class="button-animation">
+                    <img class="theme-icon" *ngIf="isLightTheme" src="imgs/dark-theme.svg" alt="Change theme icon">
+                    <img class="theme-icon" *ngIf="!isLightTheme" src="imgs/light-theme.svg" alt="Change theme icon">
+                    <span class="button-text">{{(isLightTheme ? 'BT-THEME-DARK' : 'BT-THEME-LIGHT') | translate}}</span>
+                </button>
+            </div>
+        </div>
+        <div class="light-text developer">{{animatedText}}<span class="cursor">|</span></div> 
+    </header>
+    <section class="education">
+        <div class="light-text title">{{'TX-EDUCATION' | translate}}</div>
+        <div class="section-body">
+            <div class="light-text business">                
+                <img class="company-icon" src="imgs/uemg.svg" alt="UEMG icon">
+                <span (click)="redirectTo('https://www.uemg.br/')" class="active-text">Universidade Estadual de Minas Gerais (UEMG)</span> 
+            </div>
+            <div class="light-text description">{{'TX-EDUCATION-UEMG' | translate}}
+                <span class="light-text small-text">{{'TX-EXPERIENCE-MONTH-JANUARY' | translate}} 2023 - {{'TX-EXPERIENCE-MONTH-FEBRUARY' | translate}} 2027</span>
+            </div>
+        </div>
+        <div class="section-body">
+            <div class="light-text business">                
+                <img class="company-icon" src="imgs/cefetmg.svg" alt="CEFETMG icon">
+                <span (click)="redirectTo('https://www.divinopolis.cefetmg.br/')" class="active-text">Centro Federal de Educação Tecnológica de Minas Gerais (CEFET-MG)</span> 
+            </div>
+            <div class="light-text description">{{'TX-EDUCATION-CEFET' | translate}}
+                <span class="light-text small-text">{{'TX-EXPERIENCE-MONTH-JANUARY' | translate}} 2020 - {{'TX-EXPERIENCE-MONTH-DECEMBER' | translate}} 2022</span>
+            </div>
+        </div>
+    </section>
+    <div class="section-splitter">
+        <span class="diamond"></span>
+    </div>
+    <section class="experience">
+        <div class="light-text title">{{'TX-EXPERIENCE' | translate}}</div>
+        <div class="section-body">
+            <div class="light-text business">
+                <img class="company-icon" src="imgs/pdcase.svg" alt="PDCASE icon">
+                <span (click)="redirectTo('https://www.pdcase.com/')" class="active-text">PDCase | {{'TX-EXPERIENCE-PDCASE-DESCRIPTION' | translate}}</span> 
+            </div>
+            <div class="light-text description">{{'TX-EXPERIENCE-PDCASE' | translate}}
+                <span class="light-text small-text">{{'TX-EXPERIENCE-MONTH-JANUARY' | translate}} 2023 - {{'TX-EXPERIENCE-PRESENT' | translate}}</span>
+            </div>
+        </div>
+    </section>
+    <div class="section-splitter">
+        <span class="diamond"></span>
+    </div>
+    <section class="technologies">
+        <div class="light-text title">{{'TX-TECHNOLOGIES' | translate}}</div>
+        <div class="light-text technologies-list section-body no-copy">
+            <span class="button-animation">                
+                <img class="tech-icon" src="imgs/java.svg" alt="java icon">
+                Java
+            </span>
+            <span class="button-animation">                
+                <img class="tech-icon" src="imgs/dotnet.svg" alt="dot net icon">
+                .NET
+            </span>
+            <span class="button-animation">                
+                <img class="tech-icon" src="imgs/angular.svg" alt="angular icon">
+                Angular
+            </span>
+            <span class="button-animation">
+                <img class="tech-icon" src="imgs/springboot.svg" alt="springboot icon">
+                Spring
+            </span>
+            <span class="button-animation">
+                <img class="tech-icon" src="imgs/nodejs.svg" alt="node icon">
+                Node.js
+            </span>
+            <span class="button-animation">
+                <img class="tech-icon" src="imgs/docker.svg" alt="docker icon">
+                Docker
+            </span>
+            <span class="button-animation">
+                <img class="tech-icon" src="imgs/wildfly.svg" alt="wildfly icon">
+                Wildfly
+            </span>
+            <span class="button-animation">
+                <img class="tech-icon" src="imgs/sonarqube.svg" alt="sonarqube icon">
+                SonarQube
+            </span>
+            <span class="button-animation">
+                <img class="tech-icon" src="imgs/jenkins.svg" alt="jenkins icon">
+                Jenkins
+            </span>
+            <span class="button-animation">
+                <img class="tech-icon" src="imgs/oracle.svg" alt="oracle icon">
+                Oracle
+            </span>
+            <span class="button-animation">
+                <img class="tech-icon" src="imgs/sqlserver.svg" alt="sqlserver icon">
+                SQLServer
+            </span>
+            <span class="button-animation">
+                <img class="tech-icon" src="imgs/mysql.svg" alt="mysql icon">
+                MySQL
+            </span>
+        </div>
+    </section>
+    <div class="section-splitter">
+        <span class="diamond"></span>
+    </div>
+    <section class="projects">
+        <div class="light-text title">{{'TX-PROJECTS' | translate}}</div>
+        <div class="section-body">
+            <div class="project light-text button-animation no-copy" #projectItem (click)="redirectTo('https://supernaturaldle.vercel.app/')">
+                <div class="project-info">
+                    <div class="project-title medium-text">Supernaturaldle</div>
+                    <div class="project-tags">
+                        <div>
+                            <img class="tech-proj-icon" src="imgs/angular.svg" alt="angular icon">
+                            Angular
+                        </div>
+                        <div>
+                            <img class="tech-proj-icon" src="imgs/firebase.svg" alt="firebase icon">
+                            Firebase
+                        </div>
+                    </div>
+                </div>
+                <img class="project-img" src="imgs/supernaturaldle.svg" alt="supernaturaldle icon" [class.black-filter]="isLightTheme">
+            </div>
+            <div class="project light-text button-animation no-copy" #projectItem>
+                <div class="project-info">
+                    <div class="project-title medium-text">Lycoris</div>
+                    <div class="project-tags">
+                        <div>
+                            <img class="tech-proj-icon" src="imgs/angular.svg" alt="angular icon">
+                            Angular
+                        </div>
+                        <div>
+                            <img class="tech-proj-icon" src="imgs/firebase.svg" alt="firebase icon">
+                            Firebase
+                        </div>
+                    </div>
+                </div>
+                <img class="project-img" src="imgs/lycoris.svg" alt="lycoris icon">
+            </div>
+            <div class="project light-text button-animation no-copy" #projectItem (click)="redirectTo('https://github.com/RafaMC03/Tasker')">
+                <div class="project-info">
+                    <div class="project-title medium-text">Tasker</div>
+                    <div class="project-tags">
+                        <div>
+                            <img class="tech-proj-icon" src="imgs/flutter.svg" alt="flutter icon">
+                            Flutter
+                        </div>
+                        <div>
+                            <img class="tech-proj-icon" src="imgs/firebase.svg" alt="firebase icon">
+                            Firebase
+                        </div>
+                    </div>
+                </div>
+                <img class="project-img" src="imgs/tasker.svg" alt="tasker icon">
+            </div>
+            <div class="project light-text button-animation no-copy" #projectItem (click)="redirectTo('https://github.com/leosmsilvx/iTonomise')">
+                <div class="project-info">
+                    <div class="project-title medium-text">iTonomise</div>
+                    <div class="project-tags">
+                        <div>
+                            <img class="tech-proj-icon" src="imgs/java.svg" alt="java icon">
+                            Java
+                        </div>
+                        <div>
+                            <img class="tech-proj-icon" src="imgs/mysql.svg" alt="mysql icon">
+                            MySQL
+                        </div>
+                    </div>
+                </div>
+                <img class="project-img" src="imgs/itonomise.svg" alt="itonomise icon" [class.black-filter]="isLightTheme">
+            </div>
+        </div>
+    </section>
+    <div class="section-splitter">
+        <span class="diamond"></span>
+    </div>
+    <section class="contact">
+        <div class="light-text title">{{'TX-CONTACT' | translate}}</div>
+        <div class="light-text contact-body">
+            <button (click)="redirectTo('https://www.instagram.com/leosmsilvx/')" class="button-animation">
+                <img class="social-icon" src="imgs/instagram.svg" alt="Instagram icon">
+                <span>leosmsilvx</span>
+            </button>
+            <button (click)="redirectTo('https://www.linkedin.com/in/leosmsilvx/')" class="button-animation">
+                <img class="social-icon" src="imgs/linkedin.svg" alt="Linkedin icon">
+                <span>leosmsilvx</span>                
+            </button>
+            <button (click)="redirectTo('https://www.github.com/leosmsilvx')" class="button-animation">
+                <img class="social-icon" src="imgs/github.svg" alt="GitHub icon" [class.black-filter]="isLightTheme">
+                <span>leosmsilvx</span>                
+            </button>
+            <button (click)="redirectTo('mailto:leosmsilvx@gmail.com')" class="button-animation">
+                <img class="social-icon" src="imgs/gmail.svg" alt="Gmail icon">
+                <span>leosmsilvx&#64;gmail.com</span>                
+            </button>
+        </div>
+    </section>
+</main>
+<footer class="light-text">&copy;{{anoAtual}}</footer>
